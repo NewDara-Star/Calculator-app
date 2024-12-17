@@ -29,13 +29,31 @@
   }
   
   .display {
-    background: #000;
+    background: 17171C;
     color: white;
     text-align: right;
     padding: 20px;
     font-size: 2rem;
   }
-  
+  #previous-operation {
+    color: #888;
+    text-align: right;
+    font-family: "Work Sans", sans-serif, monospace;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  #current-operation {
+    color: #fff;
+    text-align: right;
+    font-family: "Work Sans", sans-serif, monospace;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
