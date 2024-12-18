@@ -6,6 +6,32 @@
     font-family: Arial, sans-serif;
   }
   
+
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+        transition: background 0.3s ease;
+      }
+      
+      .calculator {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: #17171C;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      
+  }
   body {
     display: flex;
     justify-content: center;
@@ -15,13 +41,15 @@
     transition: background 0.3s ease;
   }
   
+  @media only screen and (min-width: 601px) {
   .calculator {
     width: 320px;
-    background-color: #333;
+    background-color: #17171C;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
   }
+}
   
   .theme-toggle {
     text-align: center;
@@ -54,6 +82,8 @@
     font-weight: 300;
     line-height: normal;
   }
+
+
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -64,9 +94,9 @@
   button {
     font-size: 1.5rem;
     padding: 20px;
-    background: #444;
+    background: #2E2F38;
     border: none;
-    border-radius: 10px;
+    border-radius: 24px;
     color: white;
     cursor: pointer;
     transition: background 0.2s ease;
@@ -77,11 +107,11 @@
   }
   
   button.blue {
-    background: #4A5FFF;
+    background: #4B5EFC;
   }
   
   button.gray {
-    background: #666;
+    background: #4E505F;
   }
   
   body.light {
@@ -94,4 +124,33 @@
   
   body.light .display {
     color: black;
+  }
+
+  body.light #current-operation {
+    color: black;
+  }
+  
+  body.light #previous-operation {
+    color: #888;
+  }
+  
+  body.light button {
+    background: #f2f2f2;
+    color: #181818;
+  }
+  
+  body.light button.blue {
+    background: #4B5EFC;
+    color: #fff;
+    
+  }
+  
+  body.light button.gray {
+    background: #D2D3DA;
+    color: #181818;
+
+  }
+  
+  body.light button:hover {
+    background: #e0e0e0;
   }
