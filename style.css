@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
         width: 100vw;
         background-color: #17171C;
         border-radius: 10px;
@@ -58,7 +58,7 @@
   
   .display {
     background: 17171C;
-    min-height: 160px;
+    min-height: 100px;
     color: white;
     text-align: right;
     padding: 20px;

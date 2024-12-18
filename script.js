@@ -19,9 +19,6 @@ const currentDisplay = document.getElementById("current-operation");
 const previousDisplay = document.getElementById("previous-operation");
 function updateDisplay() {
   currentDisplay.innerText = currentOperation || "0";
-
- 
-
   previousDisplay.innerText = previousOperation;
 }
 document.querySelectorAll("button").forEach((button) => {
